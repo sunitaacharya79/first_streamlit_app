@@ -36,3 +36,10 @@ del streamlit.dataframe(my_fruit_list)
 
 lst = [pd.DataFrame(), pd.DataFrame(), pd.DataFrame()]
 del lst 
+
+a, b, c = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
+lst = [a, b, c]
+del a, b, c # dfs still in list
+del lst     
+
+
