@@ -27,21 +27,13 @@ streamlit.st.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 # Display the table on the page.
 
+
+
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
-#DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors='raise')
-
-#del streamlit.dataframe(my_fruit_list)
-
-del streamlit.multiselect("Pick some fruits:", list(my_fruit_list.index))
-
-
-
-#lst = [pd.DataFrame(), pd.DataFrame(), pd.DataFrame()]
-#del lst 
-
-a, b, c = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
-lst = [a, b, c]
+import pandas
+my_fruit_list_New = pandas.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
+streamlit.dataframe(my_fruit_list_New)
 del a, b, c # dfs still in list
 del lst     
 
