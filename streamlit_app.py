@@ -32,8 +32,8 @@ my_fruit_list = my_fruit_list.set_index('Fruit')
 DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors='raise')
 
 
-lst = [pd.DataFrame(), pd.DataFrame(), pd.DataFrame()]
-del lst 
+#lst = [pd.DataFrame(), pd.DataFrame(), pd.DataFrame()]
+#del lst 
 
 a, b, c = pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
 lst = [a, b, c]
