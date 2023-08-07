@@ -29,6 +29,6 @@ streamlit.st.multiselect("Pick some fruits:", list(my_fruit_list.index))
 
 my_fruit_list = my_fruit_list.set_index('Fruit')
 
-DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors=’raise’)
+DataFrame.drop(labels=None, axis=0, index=None, columns=None, level=None, inplace=False, errors='raise')
 
 del streamlit.dataframe(my_fruit_list)
