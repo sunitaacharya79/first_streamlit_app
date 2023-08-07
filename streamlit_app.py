@@ -45,4 +45,4 @@ lst = [a, b, c]
 del a, b, c # dfs still in list
 del lst     
 
-
+del pandas
